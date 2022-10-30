@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/filmYorumSitesi/style.css"/>
+    <link rel="stylesheet" href="~/filmYorumSitesi/details.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <section id="menu">
+        <div class="container">
+            <div class="ayrim_menu">
+                <h4 class="menu_logo">EMKA FILM</h4>
+
+
+                <ul class="menu">
+                    <li><a href="#">Ana Sayfa</a></li>
+                    <li><a href="/Admin/BilgiListe">Giriş Yap</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+     <div class="container">
+         @RenderBody()
+     </div>
+
+    <section class="footer">
+        <div class="container">
+            <div class="ayrim_footer">
+                <h4>2022 emkafilm tüm hakları saklıdır.</h4>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

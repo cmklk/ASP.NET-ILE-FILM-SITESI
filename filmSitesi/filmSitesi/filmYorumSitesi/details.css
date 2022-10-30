@@ -1,0 +1,104 @@
+.ayrim_movie_details{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerr{
+    background-color:rgb(37, 37, 37); 
+    padding: 50px 0;
+}
+
+.details_img{
+    height: 600px;
+   
+    margin-right: 20px;
+}
+
+.details_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.details{
+    color:#fff;
+   width:600px !important;
+}
+
+
+
+.details .paragraph{
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+.detay{
+    color:orange;
+    font-size: 20px;
+}
+
+.detay span{
+    color:#fff;
+    font-size: 20px;
+}
+
+
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    margin:0 auto;
+}
+
+input[type="text"],[type="email"]{
+    width: 100%;
+}
+
+
+.kisi{
+     background-color:rgb(42, 42, 42);
+     border:2px solid orange;
+     border-radius: 10px;
+}
+
+.yorum_ayrim{
+  
+    margin:0 auto;
+    width: 60%;
+
+}
+
+.kisi{
+    display: flex;
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    margin-bottom: 10px;
+}
+.ad{
+    font-size: 15px;
+}
+.img_person{
+    height: 80px;
+    width: 80px;
+}
+
+.img_person img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.yorum{
+    margin-left:40px;
+}

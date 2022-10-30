@@ -1,0 +1,46 @@
+﻿@using filmSitesi.Models.siniflar;
+@model List<film>
+@{
+    ViewBag.Title = "BilgiListe";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">FİLM ADI</th>
+            <th scope="col">İMDP</th>
+            <th scope="col">TÜR</th>
+            <th scope="col">YAPIM YILI</th>
+            <th scope="col">KONU</th>
+            <th scope="col">OYUNCULAR</th>
+            <th scope="col">YÖNETMEN</th>
+            <th scope="col">SİL</th>
+            <th scope="col">GÜNCELLE</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var x in Model)
+        {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.filmAd</td>
+            <td>@x.imdp</td>
+            <td>@x.tur</td>
+            <td>@x.yapimYil</td>
+            <td>@x.konu</td>
+            <td>@x.oyuncular</td>
+            <td>@x.yonetmen</td>
+            <td><a href="/Admin/filmSil/@x.ID" class="btn btn-danger">SİL</a></td>
+            <td><a href="/Admin/filmVeriGetir/@x.ID" class="btn btn-warning">GÜNCELLE</a></td>
+        </tr>
+        }
+        
+    </tbody>
+</table> 
+<a href="/Admin/filmEkle/" class="btn btn-primary">YENİ FİLM EKLE</a>
+
+
+

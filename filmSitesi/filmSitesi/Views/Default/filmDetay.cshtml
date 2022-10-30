@@ -1,0 +1,28 @@
+﻿@using filmSitesi.Models.siniflar;
+@model List<film>
+@{
+    ViewBag.Title = "filmDetay";
+    Layout = "~/Views/Shared/filmSiteLayout.cshtml";
+}
+
+<section class="filmDetails">
+    <div class="containerr">
+        @foreach (var x in Model)
+        {
+            <div class="ayrim_movie_details">
+                <div class="details_img">
+                    <img src="@x.imgUrl">
+                </div>
+
+                <div class="details">
+                    <p class="paragraph">@x.konu</p>
+                    <h4 class="detay">Yönetmen : <span>@x.yonetmen</span></h4>
+                    <h4 class="detay">Oyuncular : <span>@x.oyuncular</span></h4>
+                    <h4 class="detay">Yapım Yılı : <span>@x.yapimYil</span></h4>
+                    <h4 class="detay">Tür : <span>@x.tur</span></h4>
+                </div>
+            </div>
+        }
+
+    </div>
+</section>

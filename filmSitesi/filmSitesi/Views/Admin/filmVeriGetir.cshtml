@@ -1,0 +1,56 @@
+﻿@model filmSitesi.Models.siniflar.film
+@{
+    ViewBag.Title = "filmVeriGetir";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<h2>FİLM GÜNCELLEME ALANI</h2>
+
+@using (Html.BeginForm("filmGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x=>x.ID)
+    @Html.TextBoxFor(x=>x.ID, new {@class="form-control"})
+    <br />
+    @Html.LabelFor(x => x.filmAd)
+    @Html.TextBoxFor(x => x.filmAd, new { @class = "form-control" })
+
+    <br />
+
+    @Html.LabelFor(x => x.imdp)
+    @Html.TextBoxFor(x => x.imdp, new { @class = "form-control" })
+
+    <br />
+
+    @Html.LabelFor(x => x.imgUrl)
+    @Html.TextBoxFor(x => x.imgUrl, new { @class = "form-control" })
+
+
+    <br />
+
+    @Html.LabelFor(x => x.oyuncular)
+    @Html.TextBoxFor(x => x.oyuncular, new { @class = "form-control" })
+
+    <br />
+
+    @Html.LabelFor(x => x.yapimYil)
+    @Html.TextBoxFor(x => x.yapimYil, new { @class = "form-control" })
+
+    <br />
+
+    @Html.LabelFor(x => x.konu)
+    @Html.TextAreaFor(x => x.konu, new { @class = "form-control", @style="height:200px;" })
+
+    <br />
+
+    @Html.LabelFor(x => x.tur)
+    @Html.TextBoxFor(x => x.tur, new { @class = "form-control" })
+
+    <br />
+
+    @Html.LabelFor(x=>x.yonetmen)
+    @Html.TextBoxFor(x=>x.yonetmen, new{@class="form-control"})
+
+    <button class="btn btn-warning">Blog Güncelle</button>
+
+}
+
